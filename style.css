@@ -30,6 +30,10 @@ label {
     padding: 10px 60px;
     margin: 30px;
     border-radius: 3rem;
+
+    border: none;
+    background-color: rgb(94, 201, 64);
+    color: white;
 }
 
 .card {
