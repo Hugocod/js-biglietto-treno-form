@@ -18,6 +18,8 @@ form {
     flex-direction: column;
 
     height: 100vh;
+    background-image: url("https://images.pexels.com/photos/892541/pexels-photo-892541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
 }
 
 label {
@@ -31,7 +33,34 @@ label {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.132);
+    background-color: rgba(0, 0, 0, 0.543);
     padding: 60px;
     border-radius: 3rem;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    font-size: 3rem;
+    line-height: 0;
+
+    color: white;
+}
+
+h6 {
+    margin-right: 100px;
+
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#biglietto > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

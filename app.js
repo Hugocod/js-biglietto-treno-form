@@ -16,11 +16,11 @@ document.getElementById("form").addEventListener("submit", (e) => {
     if (anni < 18) {
         /*  under 18 */
         let prezzoScontato = (prezzoPieno / 100) * 80;
-        prezzoFinale = prezzoScontato.toFixed(2) + "€";
+        prezzoFinale = prezzoScontato.toFixed(2);
     } else if (anni > 65) {
         /* over 65 */
         let prezzoScontato = (prezzoPieno / 100) * 60;
-        prezzoFinale = prezzoScontato.toFixed(2) + "€";
+        prezzoFinale = prezzoScontato.toFixed(2);
     } else {
         /* 18-65 */
         prezzoFinale = prezzoPieno;
@@ -29,9 +29,22 @@ document.getElementById("form").addEventListener("submit", (e) => {
     /* Stampo i valori ottenuti nell'html */
     document.getElementById("wrapper").innerHTML = `
     <div id="biglietto">
+    
+    <div>
+    <h6>NOME</h6>
     <h3 >${nome}</h3>
+    </div>
+
+    <div>
+    <h6>COGNOME</h6>
     <h3 >${cognome}</h3>
-    <h3 >${prezzoFinale}</h3>
+    </div>
+
+    <div>
+    <h6>PREZZO</h6>
+    <h3 >${prezzoFinale}€</h3>
+    </div>
+
     </div>
 
     `;
